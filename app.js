@@ -1,18 +1,24 @@
 /*** GLOBAL VARIABLES **/
 var ROUTES = [];
 var GENDER = 'male';
+
 /**CLASSES **/
 /**Route class **/
 function Route(name){
   this.name = name;
   this.children = [];
+  this.characters = {};
 }
 
 Route.prototype.populateTable = function(){
   var path = '#' + this.name +" table";
   $(path).append('<tr><th><h1>Child</h1></th><th><h1>Mother</h1></th><th><h1>Father</h1></th><th><h1>Stats</h1></th></tr>');
   this.children.forEach(function(child){
-    $(path).append("<tr><td><img src=images/childname.png value = childname></td></tr>".replace('childname',child.info.Name))
+    $(path).append("<tr 'data-value=childname'><td><img src=images/childname.png value = childname></td><td value=Mother></td><td value=Father</tr>".replace(/childname/g,child.info.Name))
+    let parent = child.info.Parent;
+    console.log(parent)
+    $(path + ' tr[value=childname] td[value=Gender]'.replace('childname',child.info.Name).replace('Gender',parent.Gender)).append('<img src=images/name.png'.replace('name',parent.name))
+
   })
 }
 
@@ -59,8 +65,10 @@ function removeCurrent(){
 }
 function createROUTES(){
   var fs=require('fs');
-  var data=fs.readFileSync('model/children.json');
-  var children = JSON.parse(data);
+  var child_data=fs.readFileSync('model/children.json');
+  var parent_data=fs.readFileSync('model/parents.json');
+  var children = JSON.parse(child_data);
+  var parents = JSON.parse(parent_data);
   ['birthright','conquest','revelations'].forEach(function(route){
     var r = new Route(route);
     ROUTES.push(r);
@@ -70,12 +78,7 @@ function createROUTES(){
       })
     }else{
       r.children = ROUTES[0].children.concat(route[1].children);
-      var shared = [];
-      children['shared'].forEach(function(info){
-            shared.push(new Child(info))
-      })
       ROUTES.forEach(function(route){
-          route.children.concat(shared);
           route.populateTable();
       })
     }
