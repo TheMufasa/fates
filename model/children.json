@@ -17,7 +17,7 @@
   {
     "Name": "Shigure",
     "Parent":"Azura",
-    "Potentials":["Father", "Corrin", "Jakob", "Silas", "Kaze", "Ryoma", "Hinata", "Subaki", "Takumi", "Saizo", "Hayato", "Kaden", "Azama", "Xander", "Leo", "Odin", "Arthur", "Flannel", "Benny", "Laslow", "Niles"],
+    "Potentials":["Father", "Avatar", "Jakob", "Silas", "Kaze", "Ryoma", "Hinata", "Subaki", "Takumi", "Saizo", "Hayato", "Kaden", "Azama", "Xander", "Leo", "Odin", "Arthur", "Flannel", "Benny", "Laslow", "Niles"],
     "HP": 35,
     "Str": 45,
     "Mag": 5,
@@ -30,7 +30,7 @@
   {
     "Name": "Dwyer",
     "Parent": "Jakob",
-    "Potentials": ["Father","Corrin", "Azura", "Felicia", "Mozu", "Hinoka", "Sakura", " Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Camilla", " Elise", "Berkua", "Effie", "Nyx", "Peri", "Charlotte", "Selena"],
+    "Potentials": ["Father","Avatar", "Azura", "Felicia", "Mozu", "Hinoka", "Sakura", " Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Camilla", " Elise", "Berkua", "Effie", "Nyx", "Peri", "Charlotte", "Selena"],
     "HP": 45,
     "Str": 45,
     "Mag": 30,
@@ -43,7 +43,7 @@
   {
     "Name": "Sophie",
     "Parent": "Silas",
-    "Potentials": ["Mother","Corrin", "Azura", "Felicia", "Mozu", "Hinoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Camilla", "Elise", "Berkua", "Effie", "Nyx", "Peri", "Charlotte", "Selena"],
+    "Potentials": ["Mother","Avatar", "Azura", "Felicia", "Mozu", "Hinoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Camilla", "Elise", "Berkua", "Effie", "Nyx", "Peri", "Charlotte", "Selena"],
     "HP": 35,
     "Str": 35,
     "Mag": 10,
@@ -56,7 +56,7 @@
   {
     "Name": "Midori",
     "Parent": "Kaze",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Hinoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Camilla", "Elise", "Berkua", "Effie", "Nyx", "Peri", "Charlotte", "Selena"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Hinoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Camilla", "Elise", "Berkua", "Effie", "Nyx", "Peri", "Charlotte", "Selena"],
     "HP": 45,
     "Str": 35,
     "Mag": 5,
@@ -71,7 +71,7 @@
   {
     "Name": "Shiro",
     "Parent": "Ryoma",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Camilla", "Elise"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Camilla", "Elise"],
     "HP": 50,
     "Str": 50,
     "Mag": 0,
@@ -84,7 +84,7 @@
   {
     "Name": "Kiragi",
     "Parent": "Takumi",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Camilla", "Elise"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Camilla", "Elise"],
     "HP": 45,
     "Str": 40,
     "Mag": 0,
@@ -97,7 +97,7 @@
   {
     "Name": "Asugi",
     "Parent": "Saizo",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Hinkoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Beruka", "Charlotte"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Hinkoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Beruka", "Charlotte"],
     "HP": 40,
     "Str": 45,
     "Mag": 50,
@@ -110,7 +110,7 @@
   {
     "Name": "Selkie",
     "Parent": "Kaden",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Hinkoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Peri", "Charlotte"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Hinkoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Peri", "Charlotte"],
     "HP": 35,
     "Str": 30,
     "Mag": 15,
@@ -123,7 +123,7 @@
   {
     "Name": "Hisame",
     "Parent": "Hinata",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Hinkoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Peri", "Selena"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Hinkoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Peri", "Selena"],
     "HP": 50,
     "Str": 40,
     "Mag": 0,
@@ -136,7 +136,7 @@
   {
     "Name": "Mitama",
     "Parent": "Azama",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Hinkoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Effie", "Beruka"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Hinkoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Effie", "Beruka"],
     "HP": 45,
     "Str": 40,
     "Mag": 35,
@@ -149,7 +149,7 @@
   {
     "Name": "Caeldori",
     "Parent": "Subaki",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Hinkoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Selena", "Nyx"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Hinkoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Selena", "Nyx"],
     "HP": 55,
     "Str": 35,
     "Mag": 15,
@@ -162,7 +162,7 @@
   {
     "Name": "Rhajat",
     "Parent": "Hayato",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Hinkoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Effie", "Nyx"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Hinkoka", "Sakura", "Hana", "Orochi", "Rinkah", "Kagero", "Oboro", "Setsuna", "Effie", "Nyx"],
     "HP": 40,
     "Str": 15,
     "Mag": 60,
@@ -177,7 +177,7 @@
   {
     "Name": "Siegbert",
     "Parent": "Xander",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte"],
     "HP": 40,
     "Str": 45,
     "Mag": 5,
@@ -190,7 +190,7 @@
   {
     "Name": "Forrest",
     "Parent": "Leo",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte", "Beruka", "Hinoka", "Sakura"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte", "Beruka", "Hinoka", "Sakura"],
     "HP": 55,
     "Str": 15,
     "Mag": 65,
@@ -203,7 +203,7 @@
   {
     "Name": "Ignatius",
     "Parent": "Benny",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte", "Beruka", "Elise", "Camilla", "Oboro", "Rinkah"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte", "Beruka", "Elise", "Camilla", "Oboro", "Rinkah"],
     "HP": 40,
     "Str": 50,
     "Mag": 0,
@@ -216,7 +216,7 @@
   {
     "Name": "Velouria",
     "Parent": "Keaton",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte", "Beruka", "Elise", "Camilla", "Hana", "Rinkah"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte", "Beruka", "Elise", "Camilla", "Hana", "Rinkah"],
     "HP": 50,
     "Str": 50,
     "Mag": 0,
@@ -229,7 +229,7 @@
   {
     "Name": "Percy",
     "Parent": "Arthur",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte", "Beruka", "Elise", "Camilla", "Setsuna", "Kagero"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte", "Beruka", "Elise", "Camilla", "Setsuna", "Kagero"],
     "HP": 30,
     "Str": 30,
     "Mag": 5,
@@ -242,7 +242,7 @@
   {
     "Name": "Ophelia",
     "Parent": "Odin",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte", "Beruka", "Elise", "Camilla", "Orochi", "Kagero"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte", "Beruka", "Elise", "Camilla", "Orochi", "Kagero"],
     "HP": 45,
     "Str": 15,
     "Mag": 45,
@@ -255,7 +255,7 @@
   {
     "Name": "Soleil",
     "Parent": "Laslow",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte", "Beruka", "Elise", "Camilla", "Orochi", "Hana"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte", "Beruka", "Elise", "Camilla", "Orochi", "Hana"],
     "HP": 25,
     "Str": 60,
     "Mag": 0,
@@ -268,7 +268,7 @@
   {
     "Name": "Nina",
     "Parent": "Niles",
-    "Potentials":["Mother","Corrin", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte", "Beruka", "Elise", "Camilla", "Oboro", "Setsuna"],
+    "Potentials":["Mother","Avatar", "Azura", "Felicia", "Mozu", "Selena", "Effie", "Nyx", "Peri", "Charlotte", "Beruka", "Elise", "Camilla", "Oboro", "Setsuna"],
     "HP": 30,
     "Str": 45,
     "Mag": 30,

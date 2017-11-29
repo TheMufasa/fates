@@ -19,7 +19,7 @@ Route.prototype.populateTable = function(){
     $(path).append("<tr data-value=childname><td><img src=images/childname.png data-value = childname><center>childname</center></td><td data-value=Mother></td><td data-value=Father></tr>".replace(/childname/g,child.info.Name))
     //loads the parent images into their respective spots
     let parent = ref.characters[child.info.Parent];
-    $(path + ' tr[data-value=childname] td[data-value=Gender]'.replace('childname',child.info.Name).replace('Gender',parent.info.Gender)).append('<img src=images/name.png data-value=name>'.replace(/name/g,parent.info.Name));
+    $(path + ' tr[data-value=childname] td[data-value=Gender]'.replace('childname',child.info.Name).replace('Gender',parent.info.Gender)).append('<img src=images/name.png data-value=name><center>name</center>'.replace(/name/g,parent.info.Name));
     //
   })
 }
