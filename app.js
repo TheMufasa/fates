@@ -1,6 +1,5 @@
 /*** GLOBAL VARIABLES **/
 var ROUTES = [];
-var GENDER = 'male';
 
 /**CLASSES **/
 /**Route class **/
@@ -15,11 +14,13 @@ Route.prototype.populateTable = function(){
   $(path).append('<tr><th><h1>Child</h1></th><th><h1>Mother</h1></th><th><h1>Father</h1></th><th><h1>Stats</h1></th></tr>');
   let ref = this;
   this.children.forEach(function(name){
+    //load the children images into their respective spots
     let child = ref.characters[name];
-    $(path).append("<tr data-value=childname><td><img src=images/childname.png data-value = childname></td><td data-value=Mother></td><td data-value=Father></tr>".replace(/childname/g,child.info.Name))
+    $(path).append("<tr data-value=childname><td><img src=images/childname.png data-value = childname><center>childname</center></td><td data-value=Mother></td><td data-value=Father></tr>".replace(/childname/g,child.info.Name))
+    //loads the parent images into their respective spots
     let parent = ref.characters[child.info.Parent];
-    //console.log('<img src=images/name.png data-value=name>'.replace(/name/g,parent.info.Name))
     $(path + ' tr[data-value=childname] td[data-value=Gender]'.replace('childname',child.info.Name).replace('Gender',parent.info.Gender)).append('<img src=images/name.png data-value=name>'.replace(/name/g,parent.info.Name));
+    //
   })
 }
 /**Character class **/
