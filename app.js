@@ -10,7 +10,7 @@ function Route(name){
 
 Route.prototype.populateTable = function(){
   var path = '#' + this.name +" table";
-  $(path).append('<tr><td><h1>Child</h1></td><td><h1>Mother</h1></td><td><h1>Father</h1></td><td><h1>Stats</h1></td></tr>');
+  $(path).append('<tr><th><h1>Child</h1></th><th><h1>Mother</h1></th><th><h1>Father</h1></th><th><h1>Stats</h1></th></tr>');
   this.children.forEach(function(child){
     $(path).append("<tr><td><img src=images/childname.png value = childname></td></tr>".replace('childname',child.info.Name))
   })
