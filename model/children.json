@@ -1,0 +1,260 @@
+{
+"shared" :  [
+  {
+    "Name": "Kana",
+    "Parent":"Avatar",
+    "HP": 30,
+    "Str": 35,
+    "Mag": 30,
+    "Skl": 40,
+    "Spd": 45,
+    "Lck": 45,
+    "Def": 25,
+    "Res": 25
+  },
+  {
+    "Name": "Shigure",
+    "Parent":"Azura",
+    "HP": 35,
+    "Str": 45,
+    "Mag": 5,
+    "Skl": 45,
+    "Spd": 35,
+    "Lck": 25,
+    "Def": 35,
+    "Res": 25
+  },
+  {
+    "Name": "Dwyer",
+    "Parent": "Jakob",
+    "HP": 45,
+    "Str": 45,
+    "Mag": 30,
+    "Skl": 20,
+    "Spd": 30,
+    "Lck": 30,
+    "Def": 30,
+    "Res": 35
+  },
+  {
+    "Name": "Sophie",
+    "Parent": "Silas",
+    "HP": 35,
+    "Str": 35,
+    "Mag": 10,
+    "Skl": 55,
+    "Spd": 50,
+    "Lck": 35,
+    "Def": 25,
+    "Res": 35
+  },
+  {
+    "Name": "Midori",
+    "Parent": "Kaze",
+    "HP": 45,
+    "Str": 35,
+    "Mag": 5,
+    "Skl": 55,
+    "Spd": 35,
+    "Lck": 50,
+    "Def": 30,
+    "Res": 20
+  }
+],
+"birthright" : [
+  {
+    "Name": "Shiro",
+    "Parent": "Ryoma",
+    "HP": 50,
+    "Str": 50,
+    "Mag": 0,
+    "Skl": 40,
+    "Spd": 35,
+    "Lck": 35,
+    "Def": 45,
+    "Res": 30
+  },
+  {
+    "Name": "Kiragi",
+    "Parent": "Takumi",
+    "HP": 45,
+    "Str": 40,
+    "Mag": 0,
+    "Skl": 45,
+    "Spd": 50,
+    "Lck": 45,
+    "Def": 40,
+    "Res": 15
+  },
+  {
+    "Name": "Asugi",
+    "Parent": "Saizo",
+    "HP": 40,
+    "Str": 45,
+    "Mag": 50,
+    "Skl": 55,
+    "Spd": 45,
+    "Lck": 50,
+    "Def": 30,
+    "Res": 20
+  },
+  {
+    "Name": "Selkie",
+    "Parent": "Kaden",
+    "HP": 35,
+    "Str": 30,
+    "Mag": 15,
+    "Skl": 35,
+    "Spd": 55,
+    "Lck": 60,
+    "Def": 30,
+    "Res": 50
+  },
+  {
+    "Name": "Hisame",
+    "Parent": "Hinata",
+    "HP": 50,
+    "Str": 40,
+    "Mag": 0,
+    "Skl": 40,
+    "Spd": 40,
+    "Lck": 25,
+    "Def": 30,
+    "Res": 20
+  },
+  {
+    "Name": "Mitama",
+    "Parent": "Azama",
+    "HP": 45,
+    "Str": 40,
+    "Mag": 35,
+    "Skl": 45,
+    "Spd": 50,
+    "Lck": 50,
+    "Def": 30,
+    "Res": 20
+  },
+  {
+    "Name": "Caeldori",
+    "Parent": "Subaki",
+    "HP": 55,
+    "Str": 35,
+    "Mag": 15,
+    "Skl": 40,
+    "Spd": 40,
+    "Lck": 45,
+    "Def": 35,
+    "Res": 20
+  },
+  {
+    "Name": "Rhajat",
+    "Parent": "Hayato",
+    "HP": 40,
+    "Str": 15,
+    "Mag": 60,
+    "Skl": 10,
+    "Spd": 50,
+    "Lck": 30,
+    "Def": 25,
+    "Res": 35
+  }
+],
+"conquest" : [
+  {
+    "Name": "Siegbert",
+    "Parent": "Xander",
+    "HP": 40,
+    "Str": 45,
+    "Mag": 5,
+    "Skl": 45,
+    "Spd": 45,
+    "Lck": 45,
+    "Def": 35,
+    "Res": 20
+  },
+  {
+    "Name": "Forrest",
+    "Parent": "Leo",
+    "HP": 55,
+    "Str": 15,
+    "Mag": 65,
+    "Skl": 20,
+    "Spd": 35,
+    "Lck": 25,
+    "Def": 25,
+    "Res": 55
+  },
+  {
+    "Name": "Ignatius",
+    "Parent": "Benny",
+    "HP": 40,
+    "Str": 50,
+    "Mag": 0,
+    "Skl": 40,
+    "Spd": 30,
+    "Lck": 55,
+    "Def": 45,
+    "Res": 35
+  },
+  {
+    "Name": "Velouria",
+    "Parent": "Keaton",
+    "HP": 50,
+    "Str": 50,
+    "Mag": 0,
+    "Skl": 40,
+    "Spd": 40,
+    "Lck": 35,
+    "Def": 45,
+    "Res": 30
+  },
+  {
+    "Name": "Percy",
+    "Parent": "Arthur",
+    "HP": 30,
+    "Str": 30,
+    "Mag": 5,
+    "Skl": 45,
+    "Spd": 40,
+    "Lck": 75,
+    "Def": 55,
+    "Res": 15
+  },
+  {
+    "Name": "Ophelia",
+    "Parent": "Odin",
+    "HP": 45,
+    "Str": 15,
+    "Mag": 45,
+    "Skl": 40,
+    "Spd": 45,
+    "Lck": 65,
+    "Def": 20,
+    "Res": 30
+  },
+  {
+    "Name": "Soleil",
+    "Parent": "Laslow",
+    "HP": 25,
+    "Str": 60,
+    "Mag": 0,
+    "Skl": 35,
+    "Spd": 35,
+    "Lck": 45,
+    "Def": 35,
+    "Res": 40
+  },
+  {
+    "Name": "Nina",
+    "Parent": "Niles",
+    "HP": 30,
+    "Str": 45,
+    "Mag": 30,
+    "Skl": 35,
+    "Spd": 40,
+    "Lck": 50,
+    "Def": 25,
+    "Res": 45
+  }
+]
+}
