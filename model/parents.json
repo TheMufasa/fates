@@ -1,4 +1,6 @@
-"shared" :  [ {
+{
+"shared" :  [
+  {
     "Name": "Avatar",
     "Gender": "Mother",
     "HP": 45,
@@ -569,3 +571,4 @@
     "Def": 10,
     "Res": 10
   }
+}

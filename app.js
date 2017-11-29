@@ -13,29 +13,33 @@ function Route(name){
 Route.prototype.populateTable = function(){
   var path = '#' + this.name +" table";
   $(path).append('<tr><th><h1>Child</h1></th><th><h1>Mother</h1></th><th><h1>Father</h1></th><th><h1>Stats</h1></th></tr>');
-  this.children.forEach(function(child){
-    $(path).append("<tr 'data-value=childname'><td><img src=images/childname.png value = childname></td><td value=Mother></td><td value=Father</tr>".replace(/childname/g,child.info.Name))
-    let parent = child.info.Parent;
-    console.log(parent)
-    $(path + ' tr[value=childname] td[value=Gender]'.replace('childname',child.info.Name).replace('Gender',parent.Gender)).append('<img src=images/name.png'.replace('name',parent.name))
-
+  let ref = this;
+  this.children.forEach(function(name){
+    let child = ref.characters[name];
+    $(path).append("<tr data-value=childname><td><img src=images/childname.png data-value = childname></td><td data-value=Mother></td><td data-value=Father></tr>".replace(/childname/g,child.info.Name))
+    let parent = ref.characters[child.info.Parent];
+    //console.log('<img src=images/name.png data-value=name>'.replace(/name/g,parent.info.Name))
+    $(path + ' tr[data-value=childname] td[data-value=Gender]'.replace('childname',child.info.Name).replace('Gender',parent.info.Gender)).append('<img src=images/name.png data-value=name>'.replace(/name/g,parent.info.Name));
   })
 }
-
+/**Character class **/
+function Character(info){
+  this.info = info
+}
 /**Child class **/
 function Child(info){
   this.info = info;
   this.result = info;
 }
 Child.prototype.getGrowths = function(parent) {
-  this.result.HP = (this.info.HP + parent.HP)/2;
-  this.result.Str = (this.info.Str + parent.Str)/2;
-  this.result.Mag = (this.info.Mag + parent.Mag)/2;
-  this.result.Skl = (this.info.Skl + parent.Skl)/2;
-  this.result.Spd = (this.info.Spd + parent.Spd)/2;
-  this.result.Lck = (this.info.Lck + parent.Lck)/2;
-  this.result.Def = (this.info.Def + parent.Def)/2;
-  this.result.Res = (this.info.Res + parent.Res)/2;
+  this.result.HP = (this.info.HP + parent.info.HP)/2;
+  this.result.Str = (this.info.Str + parent.info.Str)/2;
+  this.result.Mag = (this.info.Mag + parent.info.Mag)/2;
+  this.result.Skl = (this.info.Skl + parent.info.Skl)/2;
+  this.result.Spd = (this.info.Spd + parent.info.Spd)/2;
+  this.result.Lck = (this.info.Lck + parent.info.Lck)/2;
+  this.result.Def = (this.info.Def + parent.info.Def)/2;
+  this.result.Res = (this.info.Res + parent.info.Res)/2;
 };
 
 
@@ -63,24 +67,23 @@ function removeCurrent(){
   var current = $('.dropbtn').val();
   $('#myDropDown img[value =' + current + ']').hide();
 }
+//sets up a given route
 function createROUTES(){
   var fs=require('fs');
-  var child_data=fs.readFileSync('model/children.json');
-  var parent_data=fs.readFileSync('model/parents.json');
-  var children = JSON.parse(child_data);
-  var parents = JSON.parse(parent_data);
-  ['birthright','conquest','revelations'].forEach(function(route){
+  var children = JSON.parse(fs.readFileSync('model/children.json'));
+  var parents = JSON.parse(fs.readFileSync('model/parents.json'));
+  ['birthright','conquest'].forEach(function(route){
     var r = new Route(route);
     ROUTES.push(r);
     if(route != 'revelations'){
       children['shared'].concat(children[route]).forEach(function(info){
-        r.children.push(new Child(info));
+        r.children.push(info.Name);
+        r.characters[info.Name]= new Child(info);
       })
-    }else{
-      r.children = ROUTES[0].children.concat(route[1].children);
-      ROUTES.forEach(function(route){
-          route.populateTable();
+      parents['shared'].concat(parents[route]).forEach(function(info){
+        r.characters[info.Name]= new Character(info);
       })
+      r.populateTable();
     }
   })
 }
