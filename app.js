@@ -1,6 +1,6 @@
 /*** GLOBAL VARIABLES **/
-var routes = [];
-
+var ROUTES = [];
+var GENDER = 'male';
 /**CLASSES **/
 /**Route class **/
 function Route(name){
@@ -10,7 +10,10 @@ function Route(name){
 
 Route.prototype.populateTable = function(){
   var path = '#' + this.name +" table";
-  $(path).append('<th><td><h1>Child</h1></td><td><h1>Mother</h1></td><td><h1>Father</h1></td><td><h1>Stats</h1></td></th>');
+  $(path).append('<tr><td><h1>Child</h1></td><td><h1>Mother</h1></td><td><h1>Father</h1></td><td><h1>Stats</h1></td></tr>');
+  this.children.forEach(function(child){
+    $(path).append("<tr><td><img src=images/childname.png value = childname></td></tr>".replace('childname',child.info.Name))
+  })
 }
 
 /**Child class **/
@@ -54,24 +57,24 @@ function removeCurrent(){
   var current = $('.dropbtn').val();
   $('#myDropDown img[value =' + current + ']').hide();
 }
-function createRoutes(){
+function createROUTES(){
   var fs=require('fs');
   var data=fs.readFileSync('model/children.json');
   var children = JSON.parse(data);
   ['birthright','conquest','revelations'].forEach(function(route){
     var r = new Route(route);
-    routes.push(r);
+    ROUTES.push(r);
     if(route != 'revelations'){
-      children[route].forEach(function(info){
+      children['shared'].concat(children[route]).forEach(function(info){
         r.children.push(new Child(info));
       })
     }else{
-      r.children = routes[0].children.concat(route[1].children);
+      r.children = ROUTES[0].children.concat(route[1].children);
       var shared = [];
       children['shared'].forEach(function(info){
             shared.push(new Child(info))
       })
-      routes.forEach(function(route){
+      ROUTES.forEach(function(route){
           route.children.concat(shared);
           route.populateTable();
       })
@@ -106,10 +109,10 @@ function  loadingScreen(){
 function animate(){
   $('#main').hide().fadeIn(2000);
 }
-//fills in the children and potential parents for each routes
+//fills in the children and potential parents for each ROUTES
 function init(){
   prepareMenu();
   loadingScreen();
   animate();
-  createRoutes();
+  createROUTES();
 }
