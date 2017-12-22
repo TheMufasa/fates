@@ -19,7 +19,11 @@ Route.prototype.populateTable = function(){
     $(path).append("<tr data-value=childname><td><img class=img-circle src=images/childname.png data-value = childname><center>childname</center></td><td data-value=Mother></td><td data-value=Father></tr>".replace(/childname/g,child.info.Name))
     //loads the parent images into their respective spots
     let parent = ref.characters[child.info.Parent];
-    $(path + ' tr[data-value=childname] td[data-value=Gender]'.replace('childname',child.info.Name).replace('Gender',parent.info.Gender)).append('<img class=img-circle src=images/name.png data-value=name><center>name</center>'.replace(/name/g,parent.info.Name));
+    let vParentGender = parent.info.Gender == "Mother"? "Father" : "Mother"
+    let parentPath = ' tr[data-value=childname] td[data-value=Gender]'.replace('childname',child.info.Name)
+    $(path + parentPath.replace('Gender',parent.info.Gender)).append('<img class=img-circle src=images/name.png data-value=name><center>name</center>'.replace(/name/g,parent.info.Name));
+    //variable parent loader
+    $(path + parentPath.replace('Gender',vParentGender)).append('<img class=img-circle src="images/holder.png" data-value=holder.png><center>Select</center>');
     //child Stats
     console.log(ref.name)
     $(path +" tr[data-value=childname]".replace('childname',child.info.Name)).append("<td data-value=stats><p class=stats>HP:hp(0) Str:str(0) Mag:mag(0) Skl:skl(0) Spd:spd(0) Lck:lck(0) Def:def(0) Res:res(0)</p></td>".replace('hp',child.info.HP)

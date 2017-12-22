@@ -47,7 +47,7 @@
     left: 70%;
     position: absolute;
     display: inline-block;
-    
+
 }
 body {
     background-image: url("images/birthrightBG.jpg");
@@ -128,7 +128,10 @@ table{
   height: 100%;
 
 }
-
+td {
+  padding-right: 5%;
+  padding-left: 5%;
+}
 td img{
     display: block;
     margin-left: auto;
