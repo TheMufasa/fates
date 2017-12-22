@@ -123,21 +123,20 @@ pre {
 }
 
 table{
-  border: 1px solid black;
+
   width: 65%;
   height: 100%;
+  border-collapse:separate;
+  border-spacing:50px 50px;
 
 }
-td {
-  padding-right: 5%;
-  padding-left: 5%;
-}
+
 td img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px%;
 }
 center {
 	font-family: Papyrus, fantasy;
@@ -147,10 +146,13 @@ center {
 	font-weight: 500;
 	line-height: 26.4px;
 }
+tr{
+  margin:0px 0px 100px 0px;
+}
 
 .img-circle {
     border-radius: 50%;
-    border: 1px solid black;
+
 
 }
 
