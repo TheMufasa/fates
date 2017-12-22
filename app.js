@@ -16,10 +16,20 @@ Route.prototype.populateTable = function(){
   this.children.forEach(function(name){
     //load the children images into their respective spots
     let child = ref.characters[name];
-    $(path).append("<tr data-value=childname><td><img src=images/childname.png data-value = childname><center>childname</center></td><td data-value=Mother></td><td data-value=Father></tr>".replace(/childname/g,child.info.Name))
+    $(path).append("<tr data-value=childname><td><img class=img-circle src=images/childname.png data-value = childname><center>childname</center></td><td data-value=Mother></td><td data-value=Father></tr>".replace(/childname/g,child.info.Name))
     //loads the parent images into their respective spots
     let parent = ref.characters[child.info.Parent];
-    $(path + ' tr[data-value=childname] td[data-value=Gender]'.replace('childname',child.info.Name).replace('Gender',parent.info.Gender)).append('<img src=images/name.png data-value=name><center>name</center>'.replace(/name/g,parent.info.Name));
+    $(path + ' tr[data-value=childname] td[data-value=Gender]'.replace('childname',child.info.Name).replace('Gender',parent.info.Gender)).append('<img class=img-circle src=images/name.png data-value=name><center>name</center>'.replace(/name/g,parent.info.Name));
+    //child Stats
+    console.log(ref.name)
+    $(path +" tr[data-value=childname]".replace('childname',child.info.Name)).append("<td data-value=stats><p class=stats>HP:hp(0) Str:str(0) Mag:mag(0) Skl:skl(0) Spd:spd(0) Lck:lck(0) Def:def(0) Res:res(0)</p></td>".replace('hp',child.info.HP)
+              .replace('str',child.info.Str)
+              .replace('mag',child.info.Mag)
+              .replace('skl',child.info.Skl)
+              .replace('spd',child.info.Spd)
+              .replace('def',child.info.Def)
+              .replace('res',child.info.Res))
+
     //
   })
 }
@@ -62,6 +72,10 @@ function changeView(route){
     $('#' + route).fadeIn(3000);
     removeCurrent(); //removes the current game from the list of options
     //load current game
+}
+
+function changeParent(child, newP){
+    let pToParent = "tr[data-value=childname] <td [data-value= Gender]".replace('childname',child.info.name).replace('Gender','newP.info.Gender')
 }
 //removes the current game from the list of options
 function removeCurrent(){

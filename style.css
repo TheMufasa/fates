@@ -47,14 +47,11 @@
     left: 70%;
     position: absolute;
     display: inline-block;
-    background: rgba(255,255,255,0.3);
+    
 }
 body {
     background-image: url("images/birthrightBG.jpg");
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 /* Dropdown Content (Hidden by Default) */
@@ -146,4 +143,20 @@ center {
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 26.4px;
+}
+
+.img-circle {
+    border-radius: 50%;
+    border: 1px solid black;
+
+}
+
+.stats {
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+	font-size: 25px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+
 }
