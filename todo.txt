@@ -1,0 +1,7 @@
+Fill in templates of images for the variable parents - done
+Allow users to select variable parents
+	-when a spouse is selected for avater, update the spouse's spouse as the avater
+	-calculate the new growth stats
+		-update the view with the new stats
+		-show the difference in gained stats
+	-remove that variable parent as a selectable for each relevant spouse
